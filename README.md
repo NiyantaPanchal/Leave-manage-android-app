@@ -1,0 +1,2 @@
+# AskForLeave
+A system that manages, maintains and regulates leave management for various organizations from different sectors and sizes. Real-time calendar view of leave applications. Interfaced the system with Android using Firebase and PHP, Track the history of your used or added leave. Automatically calculates your current hours of leave based on start date and the number of hours you earn a year.
