@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_add_Leave"
+        android:icon="@drawable/ic_add_leave"
+        android:title="Request Leave" />
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_leave"
+        android:title="Leaves" />
+
+    <item
+        android:id="@+id/nav_approved"
+        android:icon="@drawable/ic_approved"
+        android:title="Approve Request"/>
+
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/ic_notifications"
+        android:title="Notification"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+
+</menu>

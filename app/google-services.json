@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "544115253966",
+    "firebase_url": "https://askforleave-71609.firebaseio.com",
+    "project_id": "askforleave-71609",
+    "storage_bucket": "askforleave-71609.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544115253966:android:71aea508e46f7adb",
+        "android_client_info": {
+          "package_name": "com.example.niyanta.askforleave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544115253966-bu7koia73f2mlhu567v5bt7r6ra96ute.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZec8uvn1Z3jN1TUoukI0emmysJvZgFqk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AddLeave1Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/back"
+            android:tint="@color/white" />
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add Leave"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Leave Day"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/spinnerDay"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_edittext"
+                android:clickable="true"
+                android:entries="@array/leaveday_arrays"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Select Leave type"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_edittext"
+                android:clickable="true"
+                android:entries="@array/leave_arrays"
+                android:spinnerMode="dropdown" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Reason"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtLeaveReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="top"
+                android:hint="Reason for Leave"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="From"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtFromDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:hint="Visit Date"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingLeft="8dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlvFromDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/ivFromCalender"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="Visit Date"
+                        android:padding="5dp"
+                        android:src="@drawable/calendar"
+                        android:tint="@color/colorPrimary" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="To"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtToDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:hint="Visit Date"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingLeft="8dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlvToDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/ivToCalender"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="Visit Date"
+                        android:padding="5dp"
+                        android:src="@drawable/calendar"
+                        android:tint="@color/colorPrimary" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Leave Count"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_edittext"
+                android:clickable="false"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+                android:inputType="none"
+                android:paddingLeft="8dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></LinearLayout>
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="Close"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
